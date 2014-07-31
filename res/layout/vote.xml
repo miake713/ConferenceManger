@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <!--
+         <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnagree"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="赞成" />
+
+        <Button
+            android:id="@+id/btnagainst"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:text="反对" />
+
+        <Button
+            android:id="@+id/btnabstain"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="弃权" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text= "提交" />
+    </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_vote" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="关于建设新型农村议题的投票"
+            android:textColor="@color/btn_text_color"
+            android:textSize="35dp" />
+
+        
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnagree"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="赞成"
+                android:background="@drawable/btn_vote_agree"
+                android:textSize="25dp"
+                
+                 />
+
+            <Button
+                android:id="@+id/btnagainst"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/btnagree"
+                android:text="反对" 
+                android:background="@drawable/btn_vote_against"
+                android:textSize="25dp"
+                
+                />
+
+            <Button
+                android:id="@+id/btnabstain"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btnagainst"
+                android:text="弃权"    
+                android:background="@drawable/btn_vote_abstain_item"
+                android:textSize="25dp"
+                 />
+
+            <Button
+                android:id="@+id/btnsend"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btnabstain"
+                android:text="提交"              
+                android:background="@drawable/btn_vote_send"
+                
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/votemsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/apk_name"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <!--
+           <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/votemsg"
+            android:layout_height="wrap_content"
+            android:textColor="@color/apk_name"
+            android:text="全国人民代表大会议第一次会议"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_above="@+id/btnagree"
+            android:layout_alignParentTop="true"
+            
+            
+             />
+    -->
+
+</LinearLayout>

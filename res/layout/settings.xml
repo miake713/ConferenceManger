@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg_color"
+    android:focusable="true"
+     android:focusableInTouchMode="true" >
+
+    <!-- <com.ss.android.common.ui.view.SwipeOverlayFrameLayout -->
+    <!-- android:id="@+id/swipe_overlay" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@id/title_bar" > -->
+   <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar"
+        
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/setting_list_mode"
+                    style="@style/setting_item_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" 
+                    >
+
+                    <TextView
+                        android:id="@+id/list_mode_text"
+                        style="@style/setting_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IP/域名:" />
+
+                    <EditText
+                        android:id="@+id/edittext_ip"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical" >
+                    </EditText>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_font_size"
+                    style="@style/setting_item_center"
+                    android:layout_width="match_parent"
+                   >
+
+                    <TextView
+                        android:id="@+id/font_size_text"
+                        style="@style/setting_item_text"
+                        android:text="端口:  " />
+
+                    <EditText
+                        android:id="@+id/edittext_port"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp" >
+                    </EditText>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/copyright"
+                style="@style/setting_copyright" />
+
+            <TextView
+                android:id="@+id/release_info"
+                style="@style/setting_release_info" />
+        </LinearLayout>
+    </ScrollView>
+    <!-- </com.ss.android.common.ui.view.SwipeOverlayFrameLayout> -->
+
+</RelativeLayout>

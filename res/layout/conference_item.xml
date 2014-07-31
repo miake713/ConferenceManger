@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/list_m" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/issueNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="long_click_text_view"
+            android:textColor="@color/apk_name"
+            android:textSize="@dimen/top_bar_title_size" />
+
+        <TextView
+            android:id="@+id/issueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="议题详细名称"
+            android:textColor="@color/apk_name"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/issueTypeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="农业"
+            android:textColor="@color/app_detail_cfg_txt"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/cut_line" />
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="12:00-9:00"
+            android:textColor="@color/app_detail_cfg_txt"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/cut_line" />
+
+        <TextView
+            android:id="@+id/spokesmanName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="主持人：张三"
+            android:textColor="@color/app_detail_cfg_txt"
+            android:textSize="@dimen/text_size_15" />
+        
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/cut_line" />
+
+        <TextView
+            android:id="@+id/compereCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="发言人：李四"
+            android:textColor="@color/app_detail_cfg_txt"
+            android:textSize="@dimen/text_size_15" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mybtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="5dip"
+        android:background="#fff6c368"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zt"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="议程准备中.."
+            android:textColor="@color/apk_name"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnvoteend"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="15dip"
+        android:background="#e11a37"
+        android:focusable="false"
+        android:text="投票结束"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnvotestart"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="71dip"
+        android:layout_marginTop="15dip"
+        android:background="#e11a37"
+        android:focusable="false"
+        android:text="投票开始"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnytend"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="139dip"
+        android:layout_marginTop="15dip"
+        android:background="#e11a37"
+        android:focusable="false"
+        android:text="议题结束"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnytstart"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="206dip"
+        android:layout_marginTop="15dip"
+        android:background="#e11a37"
+        android:focusable="false"
+        android:text="议题开始"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
