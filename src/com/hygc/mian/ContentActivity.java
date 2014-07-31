@@ -155,12 +155,13 @@ public class ContentActivity extends BaseActivity implements CordovaInterface {
 
 		// ListView listView = (ListView) findViewById(R.id.listattach);
 		Config.init(this);
-		String str = com.android.FileBrowser.FileUtil
-				.readSDFile("安全诚信集成ERP办公系统_用户功能及操作手册（21页）[1].html");
-		System.out.println("----------------" + str);
-		attachWebView
-				.loadDataWithBaseURL(null, str, "text/html", "utf-8", null);
-		// attachWebView.loadUrl("http://h.hiphotos.baidu.com/image/pic/item/91529822720e0cf3a8adc4f60846f21fbe09aa61.jpg");
+	//	String str = com.android.FileBrowser.FileUtil
+			//	.readSDFile("安全诚信集成ERP办公系统_用户功能及操作手册（21页）[1].html");
+	//	System.out.println("----------------" + str);
+	//	attachWebView
+			//	.loadDataWithBaseURL(null, str, "text/html", "utf-8", null);
+	
+		attachWebView.loadUrl("file://mnt/sdcard/安全诚信集成ERP办公系统_用户功能及操作手册（21页）[1].html");
 
 	}
 
