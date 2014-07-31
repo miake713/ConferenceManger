@@ -48,7 +48,7 @@ public class BaseActivity extends Activity {
 	 * @param allowFullScreen
 	 */
 	public void setAllowFullScreen(boolean allowFullScreen) {
-		this.allowFullScreen = allowFullScreen;
+		this.allowFullScreen = allowFullScreen; 
 	}
 
 	public void setAllowDestroy(boolean allowDestroy) {
